@@ -1,0 +1,129 @@
+/*/!* app css stylesheet *!/*/
+/*@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");*/
+
+/*html, body {*/
+  /*height: 100%;*/
+  /*background-image: url("resources/desktopbg.png");*/
+  /*background-size:cover;*/
+  /*background-repeat: no-repeat;*/
+  /*background-attachment: fixed;*/
+  /*background-position: center;*/
+  /*color: white;*/
+  /*font-weight: bold;*/
+/*}*/
+
+/*input.transparent-input{*/
+  /*background-color:transparent !important;*/
+  /*border-radius: 5px;*/
+  /*border: 1px solid white;*/
+  /*font-size: x-large;*/
+  /*color: white;*/
+  /*padding: 20px;*/
+  /*width: 100%;*/
+/*}*/
+
+/*.center {*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*width: 60%;*/
+  /*position: relative;*/
+  /*/!*top: 50%;*!/*/
+  /*transform: translateY(400%);*/
+/*}*/
+
+/*::-webkit-input-placeholder {*/
+  /*color: white;*/
+/*}*/
+
+/*:-moz-placeholder { /!* Firefox 18- *!/*/
+  /*color: white;*/
+/*}*/
+
+/*::-moz-placeholder {  /!* Firefox 19+ *!/*/
+  /*color: white;*/
+/*}*/
+
+/*:-ms-input-placeholder {*/
+  /*color: white;*/
+/*}*/
+
+/*button {*/
+  /*background-color: Transparent;*/
+  /*background-repeat:no-repeat;*/
+  /*border:none;*/
+  /*cursor:pointer;*/
+  /*overflow: hidden;*/
+  /*outline:none;*/
+/*}*/
+
+/*.white, .white a {*/
+  /*color: #fff;*/
+  /*font-size:1.5em;*/
+/*}*/
+
+/*.wrap {*/
+  /*overflow: hidden;*/
+  /*margin: 10px;*/
+/*}*/
+/*.box {*/
+  /*float: left;*/
+  /*position: relative;*/
+  /*width: 20%;*/
+  /*padding-bottom: 20%;*/
+  /*border: 1px solid white;*/
+/*}*/
+/*.boxInner {*/
+  /*position: absolute;*/
+  /*left: 10px;*/
+  /*right: 10px;*/
+  /*top: 10px;*/
+  /*bottom: 10px;*/
+  /*overflow: hidden;*/
+/*}*/
+/*.coveredImage{*/
+    /*width:100%; height:100%;*/
+    /*position:absolute;*/
+    /*top:0px; left:0px;*/
+/*}*/
+
+/*#myCanvas {*/
+    /*width: 50%;*/
+    /*height: 50%;*/
+    /*position: absolute;*/
+    /*bottom: 0px;*/
+    /*left: -50px;*/
+    /*background-color: rgba(255, 0, 0, .1);*/
+/*}*/
+
+/*body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {*/
+  /*margin-bottom: 0;*/
+/*}*/
+
+/*@media only screen and (max-width : 480px) {*/
+  /*/!* Smartphone view: 1 tile *!/*/
+  /*.box {*/
+    /*width: 100%;*/
+    /*padding-bottom: 100%;*/
+  /*}*/
+/*}*/
+/*@media only screen and (max-width : 650px) and (min-width : 481px) {*/
+  /*/!* Tablet view: 2 tiles *!/*/
+  /*.box {*/
+    /*width: 50%;*/
+    /*padding-bottom: 50%;*/
+  /*}*/
+/*}*/
+/*@media only screen and (max-width : 1050px) and (min-width : 651px) {*/
+  /*/!* Small desktop / ipad view: 3 tiles *!/*/
+  /*.box {*/
+    /*width: 33.3%;*/
+    /*padding-bottom: 33.3%;*/
+  /*}*/
+/*}*/
+/*@media only screen and (max-width : 1290px) and (min-width : 1051px) {*/
+  /*/!* Medium desktop: 4 tiles *!/*/
+  /*.box {*/
+    /*width: 25%;*/
+    /*padding-bottom: 25%;*/
+  /*}*/
+/*}*/

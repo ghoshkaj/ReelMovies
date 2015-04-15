@@ -1,0 +1,117 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css");
+
+html, body {
+    height: 100%;
+    background-image: url("./../resources/desktopbanner.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: black;
+    font-weight: bold;
+}
+
+.bannerSearch{
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+    margin-right: auto;
+    transform: translateY(30%);
+}
+
+
+
+/*Search Bar*/
+input.transparent-input{
+    background-color:transparent !important;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: small;
+    color: grey;
+    padding: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border:none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+/*glyph color*/
+.grey, .grey a {
+    color: grey;
+    font-size:1.5em;
+}
+
+.white, .white a {
+    color: white;
+    font-size:1.5em;
+}
+
+/*PlaceHolderText */
+::-webkit-input-placeholder {
+    color: grey;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: grey;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: grey;
+}
+
+:-ms-input-placeholder {
+    color: grey;
+}
+
+/*menu*/
+.menu {
+    list-style: none;
+    margin-bottom: 2em;
+    /*padding: 0 0 0.5em;*/
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.details {
+    color: black;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    position: relative;
+    /*top: 50%;*/
+    transform: translateY(70%);
+}
+
+.post-container {
+    /*margin: 20px 20px 0 0;*/
+    /*border: 5px solid #333;*/
+    overflow: auto;
+    color: black;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    position: relative;
+    top: 50%;
+    /*transform: translateY(50%);*/
+}
+.post-thumb {
+    float: left
+}
+.post-thumb img {
+    display: block
+}
+.post-content {
+    margin-left: 210px
+}
+.post-title {
+    font-weight: bold;
+    font-size: 200%
+}

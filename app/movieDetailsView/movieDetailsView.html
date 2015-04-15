@@ -1,0 +1,39 @@
+<div>
+
+    <div class="menu">
+        <a href="#landingPageView"> <i class="glyphicon glyphicon-home white"></i></a>
+    </div>
+    <div class="bannerSearch">
+        <div class="form-group">
+            <input ng-model="searchTerm" type='text' name='name'
+                   class="form-control transparent-input"
+                   placeholder="Didn't find it? Search Again!"  required />
+
+            <button ng-click="updateMovieName(searchTerm)">
+                <i class="glyphicon glyphicon-search grey"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="post-container">
+        <div class="post-thumb"><img ng-src={{movieDetails.posters.original | trusted}}></div>
+        <div class="post-content">
+            <h3 class="post-title">{{movieDetails.title}}</h3>
+            <p> Details: {{movieDetails.synopsis}}</p>
+            <p> Genre: {{movieDetails.genre}} </p>
+            <p> Ratings: {{movieDetails.mpaa_rating}} </p>
+            <p> Directors: {{movieDetails.abridged_directors.name}}</p>
+            <p> Runtime: {{movieDetails.runtime}}</p>
+        </div>
+    </div>
+
+    <!--<div class="details">-->
+        <!--<p> Title : {{movieDetails.title}}</p>-->
+
+    <!--</div>-->
+
+
+    <!--<a href="#movieListView">Movie List View</a>-->
+    <!--<br>-->
+    <!--<a href="#landingPageView">Landing Page</a>-->
+</div>

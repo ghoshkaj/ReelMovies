@@ -1,0 +1,41 @@
+<div>
+
+    <div class="menu">
+        <a href="#landingPageView"> <i class="glyphicon glyphicon-home white"></i></a>
+    </div>
+    <div class="bannerSearch">
+        <div class="form-group">
+            <input ng-model="newSearchTerm" type='text' name='name'
+                   class="form-control transparent-input"
+                   placeholder="Didn't find it? Search Again!"  required />
+            <button ng-click="searchMovie(newSearchTerm)">
+                <i class="glyphicon glyphicon-search grey"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="wrap">
+         <div data-ng-repeat="movie in movieList">
+            <div class="box">
+                <div class="boxInner">
+                <!--<img ng-src="{{movie.posters.thumbnail | trusted}}" ng-click="getDetails(movie.id)">-->
+                    <button ng-click="updateMovieId(movie.id)">
+                        <img ng-src="{{movie.posters.original | trusted}}" class="coveredImage">
+                    </button>
+
+                </div>
+            </div>
+         </div>
+    </div>
+
+
+
+
+    <!--<div data-ng-repeat="movie in results">-->
+        <!--{{movie.title}}-->
+    <!--</div>-->
+
+    <!--<a href="#movieDetailsView">Movie Details</a>-->
+    <!--<br>-->
+
+</div>
