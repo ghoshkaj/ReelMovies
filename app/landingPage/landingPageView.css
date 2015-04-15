@@ -19,17 +19,32 @@ input.transparent-input{
     border: 1px solid white;
     font-size: x-large;
     color: white;
-    padding: 20px;
-    width: 100%;
+    padding: 5px;
+    width: 95%;
+}
+
+.form-group{
+    overflow: hidden;
 }
 
 button {
-    background-color: Transparent;
-    background-repeat:no-repeat;
+    background-color: transparent;
+    /*background-repeat:no-repeat;*/
     border:none;
     cursor:pointer;
-    overflow: hidden;
+    /*overflow: hidden;*/
     outline:none;
+    float:right;
+}
+
+#g-search-button {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: -22px;
+    bottom:3px;
+    background-color: transparent;
 }
 
 /*glyph color*/
@@ -65,7 +80,7 @@ button {
 .center {
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 70%;
     position: relative;
     /*top: 50%;*/
     transform: translateY(400%);

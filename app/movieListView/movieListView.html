@@ -7,13 +7,17 @@
         <div class="form-group">
             <input ng-model="newSearchTerm" type='text' name='name'
                    ng-enter="searchMovie(newSearchTerm)"
-                   class="form-control transparent-input"
+                   class="transparent-input"
                    placeholder="Didn't find it? Search Again!"  required />
-            <button ng-click="searchMovie(newSearchTerm)">
-                <i class="glyphicon glyphicon-search grey"></i>
-            </button>
+            <span id="g-search-button">
+                <button ng-click="searchMovie(newSearchTerm)">
+                    <i class="glyphicon glyphicon-search grey"></i>
+                </button>
+            </span>
+
         </div>
     </div>
+
 
     <div class="wrap">
          <div data-ng-repeat="movie in movieList">

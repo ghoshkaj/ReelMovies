@@ -27,17 +27,33 @@ input.transparent-input{
     font-size: large;
     color: grey;
     padding: 5px;
-    width: 100%;
+    width: 95%;
+}
+
+.form-group{
+    overflow: hidden;
 }
 
 button {
-    background-color: Transparent;
+    background-color: transparent;
     background-repeat:no-repeat;
     border:none;
     cursor:pointer;
     overflow: hidden;
     outline:none;
+    float:right;
 }
+
+#g-search-button {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: -22px;
+    bottom:3px;
+    background-color: transparent;
+}
+
 
 /*glyph color*/
 .grey, .grey a {

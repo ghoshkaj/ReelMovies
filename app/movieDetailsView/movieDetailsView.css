@@ -19,8 +19,6 @@ html, body {
     transform: translateY(30%);
 }
 
-
-
 /*Search Bar*/
 input.transparent-input{
     background-color:transparent !important;
@@ -29,18 +27,32 @@ input.transparent-input{
     font-size: small;
     color: grey;
     padding: 5px;
-    width: 100%;
+    width: 90%;
+}
+
+.form-group{
+    overflow: hidden;
 }
 
 button {
-    background-color: Transparent;
-    background-repeat:no-repeat;
+    background-color: transparent;
+    /*background-repeat:no-repeat;*/
     border:none;
     cursor:pointer;
-    overflow: hidden;
+    /*overflow: hidden;*/
     outline:none;
+    float: right;
 }
 
+#g-search-button {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    position: relative;
+    left: -15px;
+    bottom: 10px;
+    background-color: transparent;
+}
 /*glyph color*/
 .grey, .grey a {
     color: grey;
