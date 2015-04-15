@@ -16,12 +16,18 @@ angular.module('myApp', [
         var service = {};
         var urlBase = 'http://api.rottentomatoes.com/api/public/v1.0/movies.json?apikey=rx56tnnzu7bad72p2g2qgfms&q=';
         var urlExtension = "&page_limit=10&page=1&callback=JSON_CALLBACK";
+        var boxOffice = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=rx56tnnzu7bad72p2g2qgfms&callback=JSON_CALLBACK";
         var _movieName = '';
         var _finalUrl = '';
 
         var makeSearchUrl = function(){
-            _movieName = _movieName.split(' ').join('+');
-            _finalUrl = urlBase + _movieName + urlExtension;
+            if(_movieName != null){
+                _movieName = _movieName.split(' ').join('+');
+                _finalUrl = urlBase + _movieName + urlExtension;
+            } else {
+                _finalUrl = boxOffice;
+            }
+
             return _finalUrl;
         };
 
