@@ -118,4 +118,18 @@ angular.module('myApp', [
                 }
             };
         }
-    ]);
+    ])
+    //enter directive from: http://eric.sau.pe/angularjs-detect-enter-key-ngenter/
+    .directive('ngEnter', function () {
+        return function (scope, element, attrs) {
+            element.bind("keydown keypress", function (event) {
+                if(event.which === 13) {
+                    scope.$apply(function (){
+                        scope.$eval(attrs.ngEnter);
+                    });
+
+                    event.preventDefault();
+                }
+            });
+        };
+    });

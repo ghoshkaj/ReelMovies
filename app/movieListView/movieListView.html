@@ -6,6 +6,7 @@
     <div class="bannerSearch">
         <div class="form-group">
             <input ng-model="newSearchTerm" type='text' name='name'
+                   ng-enter="searchMovie(newSearchTerm)"
                    class="form-control transparent-input"
                    placeholder="Didn't find it? Search Again!"  required />
             <button ng-click="searchMovie(newSearchTerm)">
